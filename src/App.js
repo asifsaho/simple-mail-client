@@ -5,8 +5,8 @@ import MessageDetails from './components/MessageDetails';
 import appConfig from './appConfig';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
 
         this.state = {
             messages: [],
@@ -41,10 +41,11 @@ class App extends Component {
     };
 
     removeMsg = (uid) => {
-        console.log(uid, "Should be deleted");
         let messages = this.state.messages;
 
         this.setState({messages: messages.filter(msg => msg.uid != uid)});
+
+        console.log('Message No:' + uid + " is deleted");
 
         if(this.state.openMail == uid) {
             this.setState({openMail: null});
