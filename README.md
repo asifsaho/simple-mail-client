@@ -10,6 +10,22 @@ This is a simple mail client application prototype for test purpose. This applic
 - Run ``npm start`` and you will see the application on browser, please make sure its running on 3000 port. If something already running on this port please stop it for a while
 - Currently the data source is ***FE_Challenge_messages_sample.json*** file in public directory. If you wish to use different file please place it in public directory and change the name in *appConfig.js* file if need.
 
+### Data Source JSON File structure
+
+```
+{
+  "messages": [
+    {
+      "uid": "21",  
+      "sender": "Ernest Hemingway",
+      "subject": "animals",
+      "message": "This is a tale about nihilism. The story is about a combative nuclear engineer who hates animals. It starts in a ghost town on a world of forbidden magic. The story begins with a legal dispute and ends with a holiday celebration.",
+      "time_sent": 1459239867      
+    },
+    ....
+  ]
+}
+```
 
 ### Used technologies and libraries
 
